@@ -18,9 +18,12 @@ export default function Home() {
           <div style={{ width: 36, height: 36, background: 'linear-gradient(135deg, #E8590C, #1D4ED8)', borderRadius: 8 }} />
           <span style={{ fontWeight: 700, fontSize: '1.1rem', color: '#FAFAF8', letterSpacing: '-0.02em' }}>Anthropic AI Skills</span>
         </div>
-        <a href="https://thevoiceofcash.com/consultation" style={{ background: '#E8590C', color: '#FAFAF8', padding: '0.5rem 1.25rem', borderRadius: 8, textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>
-          Get Early Access
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          <a href="/blog" style={{ color: '#00C896', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>Blog</a>
+          <a href="https://thevoiceofcash.com/consultation" style={{ background: '#E8590C', color: '#FAFAF8', padding: '0.5rem 1.25rem', borderRadius: 8, textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>
+            Get Early Access
+          </a>
+        </div>
       </nav>
 
       {/* Hero */}
