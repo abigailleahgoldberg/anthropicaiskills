@@ -494,7 +494,7 @@ For developers, extended thinking changes the calculus on which problems you can
 
 Extended thinking does increase latency and token cost. For real-time applications where response speed is critical, it may not be appropriate. For asynchronous tasks — background analysis, batch processing, complex code generation — it's often the difference between a response you can trust and one you need to verify heavily.
 
-**API implementation:** Enable via the `thinking` parameter in the Messages API with a `budget_tokens` value specifying how many tokens Claude can use for internal reasoning. The thinking content is returned separately from the final response.
+**API implementation:** Enable via the \`thinking\` parameter in the Messages API with a \`budget_tokens\` value specifying how many tokens Claude can use for internal reasoning. The thinking content is returned separately from the final response.
 
 ## Tool Use and Function Calling
 
@@ -512,7 +512,7 @@ This unlocks genuine AI agents. Not chatbots with some automation hooks, but age
 
 The difference between Claude 3 tool use and Claude 4 tool use isn't just reliability — it's the complexity of tool chains the model can reliably navigate. Multi-step tool sequences where one tool's output feeds the next are now deployable in production with appropriate error handling. The model handles the sequencing; you handle the tool definitions and error cases.
 
-**Migration note:** Tool definitions use the `tools` parameter in the Messages API. The schema is similar to Claude 3 but with improvements to how tool results are integrated. If you're migrating existing tool use implementations, test edge cases — particularly multi-tool sequences and error recovery.
+**Migration note:** Tool definitions use the \`tools\` parameter in the Messages API. The schema is similar to Claude 3 but with improvements to how tool results are integrated. If you're migrating existing tool use implementations, test edge cases — particularly multi-tool sequences and error recovery.
 
 ## Computer Use
 
