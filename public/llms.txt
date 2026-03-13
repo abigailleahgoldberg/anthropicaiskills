@@ -1,0 +1,24 @@
+# Anthropic AI Skills
+
+## About
+AnthropicAISkills.com is a resource hub for learning and applying Anthropic's AI technologies, including Claude and Constitutional AI. We cover practical guides, comparisons, and skill-building content for developers and business users.
+
+## Topics
+- Anthropic and Claude AI
+- Constitutional AI
+- AI safety
+- Claude API usage
+- Business AI applications
+- AI skill development
+- Claude vs other AI models
+
+## URLs
+- https://anthropicaiskills.com/ : Homepage
+- https://anthropicaiskills.com/blog : Blog
+- https://anthropicaiskills.com/blog/what-is-anthropic-and-why-does-it-matter-for-ai-safety : What is Anthropic and why does it matter for AI safety
+- https://anthropicaiskills.com/blog/anthropic-claude-vs-gpt-4-an-honest-comparison : Anthropic Claude vs GPT-4 — An Honest Comparison
+- https://anthropicaiskills.com/blog/how-anthropics-constitutional-ai-works-plain-english : How Anthropic's Constitutional AI Works (Plain English)
+- https://anthropicaiskills.com/blog/top-anthropic-ai-skills-to-learn-in-2026 : Top Anthropic AI Skills to Learn in 2026
+- https://anthropicaiskills.com/blog/how-to-use-the-anthropic-api-getting-started-guide : How to Use the Anthropic API — Getting Started Guide
+- https://anthropicaiskills.com/blog/why-anthropic-ai-is-the-best-choice-for-business-applications : Why Anthropic AI is the Best Choice for Business Applications
+- https://anthropicaiskills.com/blog/anthropics-model-card-explained-what-you-actually-need-to-know : Anthropic's Model Card Explained — What You Actually Need to Know
