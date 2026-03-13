@@ -473,4 +473,93 @@ The model card is a starting point, not a guarantee. But it gives you more signa
 
 Want to deploy Anthropic AI in your business? [Book a free consultation](https://thevoiceofcash.com/consultation).`,
   },
+  {
+    slug: 'anthropic-claude-4-what-changed',
+    title: "Anthropic's Claude 4: What Changed for Developers",
+    seoTitle: "Anthropic Claude 4: What Changed for Developers",
+    seoDescription: "Claude 4 brings extended thinking, advanced tool use, and computer use capabilities. Here is what developers can build now that they could not before.",
+    date: '2026-03-13',
+    category: 'Product Updates',
+    readTime: '7 min read',
+    excerpt: "Claude 4 is a meaningful step change, not just an incremental update. Extended thinking, tool use, and computer use open developer capabilities that didn't exist before. Here's what actually changed.",
+    content: `Claude 4 represents a meaningful step change in what developers can build with Anthropic's API. It's not just a better version of Claude 3 — several capabilities either arrived or matured enough to be reliably deployable in production. Here's what actually changed and what it unlocks.
+
+## Extended Thinking
+
+Extended thinking is the most architecturally significant addition. When enabled, Claude 4 can engage in a deeper internal reasoning process before producing its final response — working through complex problems step by step, reconsidering earlier conclusions, and arriving at answers that reflect genuine deliberation rather than pattern-matched completion.
+
+The practical effect is most visible on tasks that require multi-step reasoning: complex coding challenges, mathematical problem-solving, long-horizon planning, and any task where the right answer isn't obvious from the immediate context.
+
+For developers, extended thinking changes the calculus on which problems you can delegate to Claude. Tasks that previously required careful prompt engineering to force explicit chain-of-thought reasoning now have a native mechanism. You get a model that genuinely thinks through the problem, not one that simulates thinking.
+
+Extended thinking does increase latency and token cost. For real-time applications where response speed is critical, it may not be appropriate. For asynchronous tasks — background analysis, batch processing, complex code generation — it's often the difference between a response you can trust and one you need to verify heavily.
+
+**API implementation:** Enable via the `thinking` parameter in the Messages API with a `budget_tokens` value specifying how many tokens Claude can use for internal reasoning. The thinking content is returned separately from the final response.
+
+## Tool Use and Function Calling
+
+Claude 4's tool use has matured significantly. Earlier versions could call tools, but reliability was inconsistent enough that production deployments required substantial error handling and fallback logic. Claude 4 tool use is reliable enough to be the backbone of agentic workflows.
+
+The practical capability: you define a set of tools — functions, APIs, databases — in your system prompt, and Claude decides when to call them, what parameters to pass, and how to integrate the results into its response. The model handles the orchestration.
+
+This unlocks genuine AI agents. Not chatbots with some automation hooks, but agents that can:
+
+- Query your database for relevant context before answering a question
+- Call external APIs to retrieve real-time data
+- Execute code and interpret the results
+- Search documentation to answer technical questions accurately
+- Update records based on conversation outcomes
+
+The difference between Claude 3 tool use and Claude 4 tool use isn't just reliability — it's the complexity of tool chains the model can reliably navigate. Multi-step tool sequences where one tool's output feeds the next are now deployable in production with appropriate error handling. The model handles the sequencing; you handle the tool definitions and error cases.
+
+**Migration note:** Tool definitions use the `tools` parameter in the Messages API. The schema is similar to Claude 3 but with improvements to how tool results are integrated. If you're migrating existing tool use implementations, test edge cases — particularly multi-tool sequences and error recovery.
+
+## Computer Use
+
+Computer use is the capability that gets the most headlines and requires the most careful deployment thinking. It allows Claude to interact with a computer interface the way a human would: seeing the screen via screenshots, moving the cursor, clicking buttons, typing in fields, and navigating applications.
+
+The capability is real. Claude 4 can navigate web interfaces, fill out forms, extract data from applications that don't have APIs, and perform multi-step workflows across desktop and web software. For automation tasks involving legacy systems, proprietary software, or any interface that wasn't designed for programmatic access, computer use opens territory that was previously inaccessible.
+
+The deployment considerations are significant:
+
+**Speed:** Screen-based interaction is slower than API-based interaction. Each action requires a screenshot, processing, and a response. For workflows where speed is critical, computer use is not the right approach.
+
+**Reliability:** Computer use is powerful but not infallible. UI changes break automations. Unexpected prompts require handling. Any production deployment needs monitoring and fallback mechanisms.
+
+**Security:** A model that can control a computer has significant capabilities. Access controls, sandboxing, and audit logging are not optional. Define what the model can access and enforce those boundaries at the infrastructure level, not just in the prompt.
+
+**Best use cases:** Automated testing, legacy system integration, one-off data migration tasks, and prototype automation before building proper API integrations.
+
+**API implementation:** Computer use requires a sandboxed environment with screenshot capability. Anthropic provides reference implementations. This is not a drop-in capability — it requires infrastructure work to deploy safely.
+
+## What Developers Can Build Now
+
+Putting these capabilities together, Claude 4 enables production-grade implementations that weren't previously viable:
+
+**Autonomous research agents** that search the web, query databases, read documents, synthesize findings, and produce structured reports — without human steering at each step. Extended thinking handles the synthesis; tool use handles the data gathering.
+
+**Code generation pipelines** that write code, execute it, interpret the output, identify failures, and iterate — treating code generation as a feedback loop rather than a single-pass operation.
+
+**Complex document workflows** where Claude reads a document, extracts structured data using tools, applies business logic, updates records, and triggers downstream processes — all from a single document processing invocation.
+
+**Legacy system automation** using computer use to interact with software that lacks modern APIs — automating workflows that previously required manual human execution.
+
+## Migration Guide Considerations
+
+If you're moving from Claude 3 to Claude 4:
+
+**Context window:** Claude 4 maintains the 200K token context window. Existing prompts that rely on long context should work without modification.
+
+**System prompts:** Claude 4 is generally more adherent to system prompt instructions. If you were working around Claude 3's inconsistencies with explicit prompt engineering, you may find that simpler instructions now work reliably.
+
+**Tool use schemas:** The tool definition format is similar but test your existing implementations — particularly error handling paths.
+
+**Safety behaviors:** Claude 4 maintains Anthropic's Constitutional AI alignment. Refusal behaviors are similar to Claude 3; test any edge cases specific to your use case.
+
+**Extended thinking:** This is additive — you opt in. Existing implementations work without it. Enable it selectively for the tasks where deeper reasoning justifies the additional latency and cost.
+
+The overall migration path from Claude 3 to Claude 4 is smoother than most major version transitions. The capabilities are extensions, not replacements. Your existing Claude 3 implementations should work; the question is which new capabilities to layer in.
+
+Want to deploy Anthropic AI in your business? [Book a free consultation](https://thevoiceofcash.com/consultation).`,
+  },
 ];
