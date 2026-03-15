@@ -126,6 +126,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI Network */}
+      <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 2rem 2rem' }}>
+        <div style={{ borderTop: '1px solid rgba(250,250,248,0.06)', paddingTop: '1.5rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
+          <span style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(210,180,140,0.6)' }}>AI Network</span>
+          {[
+            ['ClaudeAISkills.com', 'https://claudeaiskills.com'],
+            ['AISkillsAgents.com', 'https://aiskillsagents.com'],
+            ['AISkillsGenerator.com', 'https://aiskillsgenerator.com'],
+            ['SearchPerformanceMarketing.com', 'https://searchperformancemarketing.com'],
+            ['TheVoiceOfCash.com', 'https://thevoiceofcash.com'],
+          ].map(([label, href]) => (
+            <a key={href} href={href} style={{ fontSize: '0.78rem', color: 'rgba(210,180,140,0.7)', textDecoration: 'none' }}>{label}</a>
+          ))}
+        </div>
+      </div>
+
       {/* Footer */}
       <footer style={{ borderTop: '1px solid rgba(250,250,248,0.08)', padding: '2rem', textAlign: 'center', color: 'rgba(250,250,248,0.4)', fontSize: '0.875rem' }}>
         <p style={{ margin: 0 }}>2026 Anthropic AI Skills. Independent training resource. Not affiliated with Anthropic PBC.</p>

@@ -219,6 +219,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </section>
       )}
 
+      {/* AI Network Section */}
+      <div style={{ maxWidth: 780, margin: '0 auto 32px', padding: '0 2rem' }}>
+        <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(250,250,248,0.1)', borderRadius: 10, padding: '24px' }}>
+          <div style={{ fontSize: '0.65rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(210,180,140,0.8)', marginBottom: 14 }}>AI Network</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <a href="https://claudeaiskills.com" style={{ color: 'rgba(210,180,140,0.9)', textDecoration: 'none', fontSize: '0.9rem' }}><strong>ClaudeAISkills.com</strong> — Claude tutorials, prompt engineering, and skill-building guides</a>
+            <a href="https://aiskillsgenerator.com" style={{ color: 'rgba(210,180,140,0.9)', textDecoration: 'none', fontSize: '0.9rem' }}><strong>AISkillsGenerator.com</strong> — AI tools and skill templates for rapid business implementation</a>
+            <a href="https://aiskillsagents.com" style={{ color: 'rgba(210,180,140,0.9)', textDecoration: 'none', fontSize: '0.9rem' }}><strong>AISkillsAgents.com</strong> — See how businesses are deploying Claude skills for real automation</a>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <footer style={{ borderTop: '1px solid rgba(250,250,248,0.08)', padding: '2rem', textAlign: 'center', color: 'rgba(250,250,248,0.4)', fontSize: '0.875rem' }}>
         <p style={{ margin: 0 }}>2026 Anthropic AI Skills. Independent training resource. Not affiliated with Anthropic PBC.</p>
