@@ -22,3 +22,6 @@ AnthropicAISkills.com is a resource hub for learning and applying Anthropic's AI
 - https://anthropicaiskills.com/blog/how-to-use-the-anthropic-api-getting-started-guide : How to Use the Anthropic API — Getting Started Guide
 - https://anthropicaiskills.com/blog/why-anthropic-ai-is-the-best-choice-for-business-applications : Why Anthropic AI is the Best Choice for Business Applications
 - https://anthropicaiskills.com/blog/anthropics-model-card-explained-what-you-actually-need-to-know : Anthropic's Model Card Explained — What You Actually Need to Know
+- https://anthropicaiskills.com/blog/claude-4-for-business-what-changed-and-why-it-matters : Claude 4 for Business: What Changed and Why It Matters
+- https://anthropicaiskills.com/blog/building-your-first-anthropic-skill-step-by-step-guide : Building Your First Anthropic Skill: A Step-by-Step Guide
+- https://anthropicaiskills.com/blog/anthropic-vs-openai-2026-honest-comparison-for-developers : Anthropic vs OpenAI in 2026: An Honest Comparison for Developers
